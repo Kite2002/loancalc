@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"  href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://css.gg/calendar.css' rel='stylesheet'>
+  <link href='https://css.gg/dollar.css' rel='stylesheet'>
+  <link href='https://css.gg/math-percent.css' rel='stylesheet'>
   <title>Task List</title>
 </head>
+
 <body>
   <div class="container">
     <div class="card">
       <div class="card-content">
-        <h2 class="card-title">Task List</h2>
-        <form class="taskinput"> 
-          <input autocomplete="off" type="text" name = "task" id ="task" required>
-          <span class = "placeholder" >New task</span>
-        
-        <input type = "submit" value = "Add Task" class = "button">
-      </form>
-          <h2 id="task-title">Tasks</h2>
-          <div class="forminput" >
-            <input autocomplete="off" type="text" name = "filter" id ="filter" required>
-            <span class = "placeholder" >Filter Task</span>
+        <h2 class="card-title">Loan Calculator</h2>
+        <form class="form">
+          <div class="field">
+            <div class="symbol"><i class="gg-dollar"></i></div>
+            <div class="loanForm">
+              <input autocomplete="off" type="number" name="amount" id="amount" required>
+              <span class="placeholder">Loan Amount</span>
+            </div>
+            <div class="symbol"><i class="gg-math-percent"></i></div>
+            <div class="loanForm">
+              <input autocomplete="off" type="number" name="intrest" id="intrest" required>
+              <span class="placeholder">Amount Intrest</span>
+            </div>
+            <div class="symbol"><i class="gg-calendar"></i></div>
+            <div class="loanForm">
+              <input autocomplete="off" type="number" name="year" id="year" required>
+              <span class="placeholder">Repayment Year</span>
+            </div>
           </div>
-          <ul class="collection"></ul>
-          <a href="#" class="clear-task button black">Clear Task</a>
+          <div class="loanForm">
+            <div  class="button">Submit</div>
+          </div>
+        </form>
+        <ul class="collection"></ul>
       </div>
     </div>
   </div>
 
-<script src="main.js"></script>
+  <script src="main.js"></script>
 
-  
+
 </body>
+
 </html>
