@@ -121,13 +121,16 @@ body{
 .button{
   border: none;
   appearance: none;
+  
   font-size: 120%;
   text-align: center;
-  width: 97.5%;
   padding: 6px;
   background-color: cadetblue;
   color: aliceblue;
   border-radius: 4px;
+  width: 20%;
+  margin: auto;
+
 
 }
 .button:hover{
